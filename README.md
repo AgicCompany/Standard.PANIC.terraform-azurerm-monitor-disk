@@ -27,7 +27,7 @@ Terraform module for Azure Managed Disk monitoring alerts using the PANIC framew
 
 ```hcl
 module "disk_alerts" {
-  source = "git::https://github.com/yourorg/terraform-azurerm-monitor-disk.git?ref=v1.0.0"
+  source = "git::https://github.com/AgicCompany/Standard.PANIC.terraform-azurerm-monitor-disk.git?ref=v1.0.0"
 
   resource_id         = azurerm_managed_disk.data.id
   resource_name       = "myvm-data-disk"
@@ -44,7 +44,7 @@ module "disk_alerts" {
 
 ```hcl
 module "disk_alerts" {
-  source = "git::https://github.com/yourorg/terraform-azurerm-monitor-disk.git?ref=v1.0.0"
+  source = "git::https://github.com/AgicCompany/Standard.PANIC.terraform-azurerm-monitor-disk.git?ref=v1.0.0"
 
   resource_id         = azurerm_managed_disk.premium.id
   resource_name       = "production-data-disk"
